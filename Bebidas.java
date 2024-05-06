@@ -32,7 +32,7 @@ public class Bebidas extends Produtos {
 		this.sabor = sabor;
 	}
 
-	public boolean isAlcoolico() {
+	public boolean getAlcoolico() {
 		return alcoolico;
 	}
 
@@ -51,7 +51,7 @@ public class Bebidas extends Produtos {
 		System.out.println("Essa bebida está me energizando");
 	}
 	public void alcoolizar() {
-		if (alcoolico == true) {
+		if (alcoolico) {
 		System.out.println("Este produto possui teor alcoólico");
 	} else {
 		System.out.println("Este produto não possui teor alcoólico");
@@ -62,7 +62,7 @@ public class Bebidas extends Produtos {
 		super.exibirInformacoes();
 		System.out.println(tamanho);
 		System.out.println(sabor);
-		System.out.println("Produto " +alcoolico);
+		alcoolizar();
 	}
 	
 	public void desconto() {
