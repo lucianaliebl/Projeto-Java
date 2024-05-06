@@ -43,15 +43,15 @@ public class Produtos {
 	//Métodos: são as ações que o objeto realiza 
 	public void exibirInformacoes() {
 		System.out.println("Produto: " + nomeProduto);
-		System.out.println("Preço: " + precoProduto);
+		System.out.println("Preço: " + precoProduto + " R$");
 		System.out.println("Descrição: " + descricaoProduto);
 	}
 	
 	public void desconto() {
-		if (descontoProduto == true) {
-		    System.out.println("O" + nomeProduto + "está com desconto de 10%");
+		if (descontoProduto) {
+		    System.out.println("O produto está com desconto de 10%");
 	    } else {
-	    	System.out.println("O" + nomeProduto + "não está em promoção");
+	    	System.out.println("O produto não está em promoção");
 	    }
     }
 	
