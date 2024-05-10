@@ -56,13 +56,15 @@ public class Cosmetico extends Produtos {
 			System.out.println("Este produto não possui fragrância");
 		}
 	}
-	
+
+	@Override
 	public void exibirInformacoes() {
 		super.exibirInformacoes();
 		System.out.println("Esse produto possui: " + tamanho_embalagem);
 		System.out.println(finalidade);
 	}
-	
+
+	@Override
 	public void desconto() {
 		super.desconto();
 	}
