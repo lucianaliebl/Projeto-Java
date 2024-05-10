@@ -68,13 +68,15 @@ public class Bebidas extends Produtos {
 		}
 	}
 
+	@Override
 	public void exibirInformacoes() {
 		super.exibirInformacoes();
 		System.out.println(tamanho + UnidadeMedida);
 		System.out.println(sabor);
 		alcoolizar();
 	}
-	
+
+	@Override
 	public void desconto() {
 		super.desconto();
 	}
