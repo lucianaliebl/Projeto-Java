@@ -51,7 +51,7 @@ public class Frutas extends Produtos{
 		System.out.println("Descascando fruta...");
 	}
 
-	
+	@Override
 	public void exibirInformacoes() {
 		super.exibirInformacoes();
 		System.out.println("Fruta em promoção!");	
